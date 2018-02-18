@@ -1,0 +1,51 @@
+CREATE DATABASE lostfound;
+
+CREATE TABLE `user` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `designation` varchar(255),
+  `nsuid` int(12) NOT NULL,
+  `phone` int(11),
+  `type` varchar(255)
+);
+
+CREATE TABLE `post` ( 
+  `pid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+  `userid` int(11) NOT NULL, 
+  `description` varchar(255) NOT NULL, 
+  `image` mediumblob, 
+  `post_date` datetime NOT NULL, 
+  `post_status` tinyint(1), 
+  `post_recover` tinyint(1), 
+  `type` varchar(255) NOT NULL, 
+  `image_type` varchar(255), 
+  FOREIGN KEY fk_uid(userid) 
+  REFERENCES user(userid) 
+  )
+
+CREATE TABLE `comment` (
+  `cid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `pid` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `cdesc` varchar(255),
+  `cdate` datetime NOT NULL,
+  `cimage` varchar(255),
+  `cimg_type` varchar(255),
+  FOREIGN KEY fk_usid(userid)
+  REFERENCES user(userid),
+  FOREIGN KEY fk_pid(pid)
+  REFERENCES post(pid)
+)
+
+CREATE TABLE `contact` (
+  `qid` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` int(11),
+  `message` varchar(255) NOT NULL
+)
+
+Insert into `user`(`first_name`, `last_name`, `username`, `password`, `designation`, `nsuid`, `phone`, `type`)  values ('Sharmina', 'Rahman', 'jhumu' , MD5('1234'), 'Alumni', '1110898042', '01670376605', 'admin');
