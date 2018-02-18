@@ -1,0 +1,173 @@
+/* page css */
+*{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-inverse .nav li a, 
+.navbar-inverse .navbar-brand
+{
+	text-transform: uppercase;
+  	font-weight: bold;
+  	color: white;
+}
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus 
+{
+	color: #428bca;
+  	outline: none;
+}
+.navbar-inverse .navbar-nav > .active > a 
+{
+	border-radius: 0;
+  	color: #428bca;
+}
+.pgbody
+{
+	background-color: #303434;
+}
+.pgcover
+{
+	background:linear-gradient(
+                    rgba(20,20,20, .5), 
+                    rgba(20,20,20, .5)), 
+					url('../images/pghome.jpg');
+	min-height: 400px;
+	border-radius: 0 !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	color: white;
+	padding-top: 100px;
+	margin-top: 20px;
+}
+.coverpage
+{
+	margin-top: 50px;
+}
+.pagecon
+{
+	background-color: #303434;
+	height: auto;
+}
+.sidebar
+{
+	height: 400px;
+	background-color: #000000;
+	margin-bottom: 20px;
+}
+.content
+{
+	background-color: #000000;
+	height: auto;
+	margin-bottom: 20px;
+}
+.pgfooter
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #000000;
+	color: white;
+}
+.searchfor
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.searchtable table thead tr th
+{
+	color: white;
+}
+.postpg
+{
+	margin-top: 20px;
+}
+.main-con
+{
+	height: auto;
+}
+.postbox
+{
+	border-radius: 0px;
+	background-color: #000000;
+	border-color: #000000;
+	padding-bottom: 20px;
+}
+.glyphicon-camera
+{
+	font-size: 25px;
+	color: #428bca;
+}
+.showpost
+{
+	margin-top: 20px;
+	background-color: #303434;
+	height: auto;
+	color: white;
+	padding-bottom: 20px;
+}
+.slct
+{
+    width:auto !important;
+    background-color: #428bca;
+    border-color: #428bca;
+    color: white;
+}
+form > h4
+{
+	font-weight: bold;
+	color: white;
+}
+.cmt_icon
+{
+	color: gray;
+	font-size: 15px;
+}
+.postbx
+{
+	border: 1px solid white;
+	margin-top: 20px;
+	background-color: #000000;
+	padding: 10px;
+	color: white;
+}
+.postbx h5
+{
+	color: white;
+	font-weight: bolder;
+}
+.cmnts
+{
+	padding: 5px;
+}
+.cmnt_button
+{
+	margin-top: 1px;		
+}
+.searchpg
+{
+	margin-top: 20px;
+	background-color: #000000;
+	height: auto;
+	color: white;
+	padding-bottom: 20px;
+}
+.searchtable
+{
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+}
+.searchtable tr td a
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.searchtable tr td a:hover
+{
+	color: #428bca;
+}
+.euser
+{
+	border: 2px solid white;
+}
